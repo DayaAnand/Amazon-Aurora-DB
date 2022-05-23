@@ -1,0 +1,6 @@
+docker build -t flask_app .
+docker run -p 8081:8081 -it flask_app
+docker images
+docker images rm -f <image-id>
+
+//netstat -ano | findstr LISTEN
