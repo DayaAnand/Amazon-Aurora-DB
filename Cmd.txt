@@ -1,6 +1,4 @@
-docker build -t flask_app .
-docker run -p 8081:8081 -it flask_app
-docker images
-docker images rm -f <image-id>
-
-//netstat -ano | findstr LISTEN
+docker build -t flask_app .  // Build a Docker Application 
+docker run -p 8081:8081 -it flask_app // Expose our flask_app to port 8081
+docker images //to list all the Docker Images
+docker images rm -f <image-id> // To remove the Docker Image with its <image-id>
